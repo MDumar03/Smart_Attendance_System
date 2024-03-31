@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log_in.html</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+         
+        body{
+         background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(b4.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         background-position: center;
+         height: 100vh;
+
+        }  
+        .header{
+            background-color: aliceblue;
+            padding: 10px;
+
+            position: relative;
+            margin-top: 0px;
+
+        }
+        .header img{
+            margin-left: 10px;
+        }
+
+        .main{
+         background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(blur-1.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         
+         max-width: 280px;
+         margin: 0px auto;
+         padding: 20px;
+         text-align: center;
+         height: 300px;
+
+         position: relative;
+         top: 170px;
+         border-radius: 15px;
+         border: solid 3px aliceblue;  
+
+        }
+
+        #account{
+           position: relative;
+           top: 5vh;
+           background-color: transparent;
+           font-family: 'Courier New', Courier, monospace;
+           padding: 10px;
+           color: aliceblue;
+           max-width: 200px;
+           border: solid 3px aliceblue;
+           font-weight: bold;
+           border-radius: 10px;
+        }
+        #pass{
+           position: relative;
+           top: 5vh;
+           background-color: transparent;
+           font-family: 'Courier New', Courier, monospace;
+           padding: 10px;
+           color: aliceblue;
+           max-width: 200px;
+           border: solid 3px aliceblue;
+           font-weight: bold;
+           border-radius: 10px;
+
+        }
+        #btn-1{
+           position: relative;
+           top: 5vh;
+           width: 200px;
+
+           background-color: aliceblue;
+           font-family: Arial, Helvetica, sans-serif;
+           font-weight: bold;
+           padding: 10px;
+           color: black;
+           border-radius:10px;
+           border: solid 2px aliceblue;
+
+        }
+
+        .main h2{
+            font-family:Arial, Helvetica, sans-serif;
+            color: aliceblue;
+            font-weight: bold;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <div class="header">
+        <img src="logo.png" alt="" height="50" width="120">
+    </div>
+    
+    <div class="main">
+        <h2>Log in...</h2>
+        <br>
+
+       <input type="text" placeholder="Account: " name="Account" id="account" required>
+       <br><br>
+       <input type="password" placeholder="Pass****" name="password" id="pass" required>
+       <br><br>
+        <a href="attendance.html">
+       <button id="btn-1">LOG IN</button>
+       </a>
+       <br>
+    
+    </div>
+
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attendance.html</title>
+    <style>
+        *{margin: 0px;
+        padding: 0px;
+        }
+        body{
+            
+            background-image: linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(b3.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            height:100vh;
+
+      }  
+
+      .header{
+            background-color: aliceblue;
+            padding: 10px;
+
+            position: relative;
+            margin-top: 0px;
+     
+        }
+        .header img{
+            margin-left: 10px;
+        }
+        .main{
+         background-image:linear-gradient(rgba(0,0,0,0.10),rgba(0,0,0,0.10)),url(blur-2.jpg) ;
+         background-repeat: no-repeat;
+         background-size: cover;
+         
+         max-width:250px;
+         margin: 0px auto;
+         padding: 20px;
+         text-align: center;
+         height: 280px;
+
+         position: relative;
+         top: 170px;
+         border-radius: 15px;
+         border: solid 3px aliceblue;  
+ 
+        }
+       
+        #number{
+            max-width: 200px;
+            padding: 10px;
+            background-color: transparent;
+            color: aliceblue;
+            font-weight: bold;
+            border-radius: 10px;
+            border: solid 3px aliceblue;
+
+            position: relative;
+            top: 5vh;
+        }
+        #session{
+            min-width: 200px;
+            padding: 10px;
+            background-color: transparent;
+            color: aliceblue;
+            font-weight: bold;
+            border-radius: 10px;
+            border: solid 3px aliceblue;
+
+            position: relative;
+            top: 5vh;
+        }
+        #btn-2{
+            min-width: 200px;
+            padding: 10px;
+            background-color: aliceblue;
+            font-weight: bold;
+            font-family: Arial, Helvetica, sans-serif;
+            border-radius: 10px;
+            border: solid 2px aliceblue ;
+
+            position: relative;
+            top: 5vh;
+
+
+        }
+
+        .main h2{
+            color: aliceblue;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+        }
+    
+        .op1{
+            background-color:aliceblue;
+            font-weight: bold;
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <a href="login.html"><img src="logo.png" alt="" height="50" width="120"></a>
+    </div>
+   
+    <div class="main">
+        <h2>Register here</h2>
+        <br>
+
+       <input type="text" placeholder="ID Number : " name="Id NUmber" id="number" required>
+       <br><br>
+        <select name="session" id="session" >
+            <option value="session"  class="op1">Session</option>
+            <option value="9 AM - 11 AM"  class="op1">9 AM - 11 AM</option>
+            <option value="11 AM - 1 PM" class="op1">11 AM - 1 PM</option>
+            <option value="2 PM - 4 PM" class="op1">2 PM - 4 PM</option>
+            <option value="4 PM - 6 PM" class="op1">4 PM - 6 PM</option>    
+        </select>
+       <br><br>
+        <a href="attendance.html">
+       <button id="btn-2" value="send" onclick="any()">SUBMIT</button>
+       </a>
+       <br>
+
+
+    </div>
+    
+  
+    <script>
+
+        function any(){
+            var idn=document.getElementById("number").value;
+            var time=document.getElementById("session").value;
+
+        window.alert("Dear"+" "+"student,"+" "+"your"+" "+"attendance"+" "+"has been"+" "+"submitted."+" "+"ID:"+" "+idn+";"+" Session:"+" "+time+".");    
+
+
+        }
+
+    </script>
+
+</body>
+</html>
